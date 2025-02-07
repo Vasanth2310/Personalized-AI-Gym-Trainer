@@ -1,0 +1,256 @@
+/* HomeScreen.css */
+
+.home-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  color: #fff;
+  background-color: #000;
+}
+
+/* Header Styles */
+.header {
+  background-color: rgba(0, 0, 0, 0.9);
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  width: 120px;
+  height: auto;
+}
+
+.navigation {
+  display: flex;
+}
+
+.nav-link {
+  color: #fff;
+  text-decoration: none;
+  margin-left: 25px;
+  padding: 12px 20px;
+  border-radius: 5px;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #90EE90;
+}
+
+.login-button {
+  background-color: #90EE90;
+  color: #000;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 5px;
+  font-weight: 600;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.login-button:hover {
+  background-color: #000;
+  color: #90EE90;
+}
+
+/* Hero Section Styles */
+.hero-section {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  height: 70vh; /* Adjust as needed */
+}
+
+.hero-image {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  min-height: 100%;
+  max-height: 100%;
+  display: block;
+  filter: brightness(0.6); /* Darken the image if needed */
+}
+
+.hero-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  text-align: center;
+  width: 90%;
+}
+
+.quote-container {
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 40px;
+  border-radius: 10px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.quote {
+  font-size: 3em;
+  margin-bottom: 20px;
+  font-weight: 600;
+  text-shadow: 2px 2px 4px #000;
+}
+
+.app-description {
+  font-size: 1.6em;
+  margin-bottom: 40px;
+  line-height: 1.6;
+}
+
+.try-now-button {
+  background-color: #90EE90;
+  color: #000;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.2em;
+  font-weight: 600;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  cursor: pointer; /* Make the button look clickable */
+}
+
+.try-now-button:hover {
+  background-color: #000;
+  color: #90EE90;
+}
+
+/* Features Section Styles */
+.features-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 60px;
+  background-color: #111;
+}
+
+.feature-card {
+  width: 350px;
+  margin: 30px;
+  padding: 40px;
+  border: none;
+  border-radius: 10px;
+  text-align: center;
+  background-color: #222;
+  box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.feature-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.25);
+}
+
+.feature-card h2 {
+  color: #90EE90;
+  text-shadow: 2px 2px 4px #000;
+  margin-bottom: 20px;
+  font-size: 1.4em;
+}
+
+.feature-card p {
+  color: #eee;
+  line-height: 1.7;
+  font-size: 1.1em;
+}
+
+/* Feedback Section Styles */
+.feedback-section {
+    padding: 60px;
+    text-align: center;
+    background-color: #111; /* or #222 for a slightly lighter background */
+}
+
+.feedback-section h2 {
+    color: #90EE90; /* Lime green for headings */
+    text-shadow: 2px 2px 4px #000;
+    margin-bottom: 30px;
+}
+
+.feedback-card {
+    margin: 20px auto; /* Center the cards */
+    padding: 30px;
+    border: none;
+    border-radius: 10px;
+    width: 80%; /* Adjust width as needed */
+    max-width: 800px; /* Set a maximum width */
+    background-color: #222; /* Slightly darker background for cards */
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.feedback-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.25);
+}
+
+.feedback-card p {
+    color: #eee;
+    line-height: 1.6;
+}
+
+
+/* GPT Model Section Styles */
+.gpt-model-section {
+    padding: 60px;
+    text-align: center;
+    background-color: #111; /* Or #222 for a slightly lighter background */
+}
+
+.gpt-model-section h2 {
+    color: #90EE90; /* Lime green for headings */
+    text-shadow: 2px 2px 4px #000;
+    margin-bottom: 20px;
+}
+
+.gpt-model-section p {
+    color: #eee;
+    line-height: 1.6;
+}
+
+
+/* Footer Styles */
+.footer {
+  background-color: rgba(0, 0, 0, 0.9);
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.footer-left,
+.footer-right {
+  display: flex;
+}
+
+.footer-link {
+  color: #90EE90;  /* Lime green footer links */
+  text-decoration: none;
+  margin-left: 15px;
+  transition: color 0.3s ease;
+}
+
+.footer-link:hover {
+  color: #fff; /* White on hover */
+}
+
+
+body {
+  margin: 0;
+  padding: 0;
+}

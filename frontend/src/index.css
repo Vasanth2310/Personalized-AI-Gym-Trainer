@@ -1,0 +1,55 @@
+/* index.css - Global Styles (Use Sparingly) */
+
+/* CSS Reset or Normalize (Choose one) */
+
+/* Option 1: CSS Reset (More Aggressive) */
+/* Resets most default browser styles */
+/* import 'reset-css'; */  /* Uncomment if you installed reset-css */
+
+/* Option 2: CSS Normalize (Less Aggressive) */
+/* Normalizes styles for better cross-browser consistency */
+/* import 'normalize.css'; */ /* Uncomment if you installed normalize.css */
+
+/* Or include via CDN in your index.html if you prefer */
+/* <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"> */
+/* <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" integrity="sha512-N+4cqU9j+2l39q5q58+NmXEqpWKq+8q2p+m/W7j015zO/Q0nqHAj99wV2Ly0m9I5o99vNr+m1zL5q9S9qV2w==" crossorigin="anonymous" referrerpolicy="no-referrer" /> */
+
+
+
+/* Base Styles (These are truly global) */
+
+html,
+body {
+  margin: 0; /* Remove default margins from html and body */
+  padding: 0;
+  font-family: sans-serif; /* Set a default font family */
+  /* background-color: #f8f8f8;  Light background for the whole app (optional)*/
+  color: #333; /* Dark text color (optional) */
+}
+
+/* Typography (Optional global typography) */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 600; /* Slightly bolder headings */
+  margin-bottom: 1rem; /* Consistent spacing below headings */
+}
+
+p {
+  line-height: 1.6; /* Improved readability */
+  margin-bottom: 1rem; /* Consistent spacing below paragraphs */
+}
+
+a {
+  color: #007bff; /* Blue link color */
+  text-decoration: none; /* Remove underlines */
+  transition: color 0.3s ease; /* Smooth color transition */
+}
+
+a:hover {
+  color: #0056b3; /* Darker blue on hover */
+  text-decoration: underline; /* Add underline on hover */
+}
+
+/* Other very general styles... */
+/* ... */
+
+/* Note: It's best to keep global styles to a minimum */
