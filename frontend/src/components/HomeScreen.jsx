@@ -24,7 +24,7 @@ const HomeScreen = () => {
       </header>
 
       <div className="hero-section">
-        <img src="/assets/HomeScreen Img.jpg" alt="Gym Hero" className="hero-image" />
+        <img src="/assets/HomeScreen Img.JPG" alt="Gym Hero" className="hero-image" />
         <div className="hero-content">
           <div className="quote-container">
             <p className="quote">"Unlock Your Fitness Potential with AI"</p>

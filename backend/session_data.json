@@ -1,1 +1,1539 @@
-[]
+[
+  {
+    "session_id": "d63debae-822c-4dab-bd6f-2d3116ad3e07",
+    "exercise": "Inclined Dumbell Press",
+    "timestamp": "2025-02-08T20:48:18.040468",
+    "duration": 2.2002933025360107,
+    "rep_count": 0
+  },
+  {
+    "session_id": "d2f80a97-2f51-4f49-b481-f34b218a47a8",
+    "exercise": "Crunches",
+    "timestamp": "2025-02-08T21:31:38.058641",
+    "duration": 18.46069860458374,
+    "rep_count": 0
+  },
+  {
+    "session_id": "050d8378-698d-4df0-a9e6-e42d590de0c5",
+    "exercise": "Crunches",
+    "timestamp": "2025-02-09T11:22:17.655369",
+    "duration": 91.07646751403809,
+    "rep_count": 0,
+    "rep_history": [],
+    "user": "test123@gmail.com"
+  },
+  {
+    "session_id": "7c3fadb5-983a-44e2-a43a-439dfc33c0da",
+    "exercise": "Situps",
+    "timestamp": "2025-02-09T11:27:42.908014",
+    "duration": 2.0138003826141357,
+    "rep_count": 0,
+    "rep_history": [],
+    "user": "test123@gmail.com"
+  },
+  {
+    "session_id": "a647be87-c185-494a-bf44-53996914a920",
+    "exercise": "Crunches",
+    "timestamp": "2025-02-09T11:44:04.366701",
+    "duration": 80.88831615447998,
+    "rep_count": 0,
+    "rep_history": [],
+    "user": "test123@gmail.com"
+  },
+  {
+    "session_id": "82e301be-3cdd-49a0-9b88-5703e1a50562",
+    "exercise": "Pushups",
+    "timestamp": "2025-02-09T12:07:09.581799",
+    "duration": 33.73562955856323,
+    "rep_count": 0,
+    "rep_history": [],
+    "user": "test123@gmail.com"
+  },
+  {
+    "session_id": "780fca2f-1463-48e0-bcee-75f178366d57",
+    "exercise": "Squats",
+    "timestamp": "2025-02-09T12:07:27.531348",
+    "duration": 15.355515003204346,
+    "rep_count": 0,
+    "rep_history": [],
+    "user": "test123@gmail.com"
+  },
+  {
+    "session_id": "c88c467a-d7ab-48b1-97fc-9ad1fae2b055",
+    "exercise": "Pushups",
+    "timestamp": "2025-02-09T12:23:32.810816",
+    "duration": 230.63329434394836,
+    "rep_count": 0,
+    "rep_history": [],
+    "user": "test123@gmail.com"
+  },
+  {
+    "session_id": "5820d68b-5849-4f23-8eb2-b130f5813153",
+    "exercise": "Pushups",
+    "timestamp": "2025-02-09T13:03:13.687106",
+    "duration": 176.9078607559204,
+    "rep_count": 0,
+    "rep_history": [],
+    "user": "test123@gmail.com"
+  },
+  {
+    "session_id": "0118f56c-af7f-4308-bc15-363116b489fc",
+    "exercise": "Situps",
+    "timestamp": "2025-02-09T13:03:34.923389",
+    "duration": 11.213125705718994,
+    "rep_count": 0,
+    "rep_history": [],
+    "user": "test123@gmail.com"
+  },
+  {
+    "session_id": "46481791-1847-4ed8-a03b-1324aabb39ff",
+    "exercise": "Pushups",
+    "timestamp": "2025-02-09T14:43:32.097110",
+    "duration": 61.435553550720215,
+    "rep_count": 0,
+    "rep_history": [],
+    "user": "test123@gmail.com"
+  },
+  {
+    "session_id": "24e88399-30f5-4b77-ae46-85857486aacd",
+    "exercise": "Crunches",
+    "timestamp": "2025-02-09T20:44:21.277924",
+    "duration": 7.535256624221802,
+    "rep_count": 0,
+    "rep_history": [],
+    "user": "test123@gmail.com"
+  },
+  {
+    "session_id": "04677864-6e82-4ed8-b576-6eb7441db98b",
+    "exercise": "Crunches",
+    "timestamp": "2025-02-09T20:48:12.968474",
+    "duration": 8.2917640209198,
+    "rep_count": 0,
+    "rep_history": [],
+    "user": "test123@gmail.com"
+  },
+  {
+    "session_id": "6b979892-30d3-4001-b1ce-55f7528cb151",
+    "exercise": "Crunches",
+    "timestamp": "2025-02-09T20:48:20.505469",
+    "duration": 3.818817615509033,
+    "rep_count": 0,
+    "rep_history": [],
+    "user": "test123@gmail.com"
+  },
+  {
+    "session_id": "0696ce6b-e10a-4b8d-b922-c2d8f6879cb9",
+    "exercise": "Crunches",
+    "timestamp": "2025-02-10T11:00:54.951350",
+    "duration": 20.75323987007141,
+    "rep_count": 0,
+    "rep_history": [],
+    "user": "test123@gmail.com"
+  },
+  {
+    "session_id": "9c88612a-c7c3-4f42-93e4-5b9ee0f02e68",
+    "exercise": "Situps",
+    "timestamp": "2025-02-10T11:25:43.136538",
+    "duration": 14.574449062347412,
+    "rep_count": 0,
+    "rep_history": [],
+    "user": "test123@gmail.com"
+  },
+  {
+    "session_id": "1e8e7da4-3845-40b9-819a-bc8c636e05ba",
+    "exercise": "Situps",
+    "timestamp": "2025-02-10T11:41:08.784846",
+    "duration": 58.80577993392944,
+    "rep_count": 0,
+    "rep_history": [],
+    "user": "test123@gmail.com"
+  },
+  {
+    "session_id": "b6ee4387-e579-4df0-a144-55a093d47886",
+    "exercise": "Situps",
+    "timestamp": "2025-02-10T12:20:55.194958",
+    "duration": 23.627540111541748,
+    "rep_count": 0,
+    "rep_history": [],
+    "user": "test123@gmail.com"
+  },
+  {
+    "session_id": "e73cf558-f58a-48b2-abdb-963b1af2298f",
+    "exercise": "Situps",
+    "timestamp": "2025-02-10T14:05:24.896580",
+    "duration": 70.11953663825989,
+    "rep_count": 0,
+    "rep_history": [],
+    "user": "test123@gmail.com"
+  },
+  {
+    "session_id": "5e24a466-a623-4975-a45f-427bbfcc5714",
+    "exercise": "Situps",
+    "timestamp": "2025-02-10T15:19:30.055939",
+    "duration": 7.131847620010376,
+    "rep_count": 0,
+    "rep_history": [],
+    "user": "test123@gmail.com"
+  },
+  {
+    "session_id": "4a42c303-4f9f-49d9-aafd-5339261e553b",
+    "exercise": "Plank",
+    "timestamp": "2025-02-10T15:19:44.051119",
+    "duration": 12.907155513763428,
+    "rep_count": 0,
+    "rep_history": [],
+    "user": "test123@gmail.com"
+  },
+  {
+    "session_id": "2d27d6bb-43a2-4ec5-b793-42d9b18a3ab2",
+    "exercise": "Situps",
+    "timestamp": "2025-02-11T08:58:52.855575",
+    "duration": 45.55997180938721,
+    "rep_count": 0,
+    "rep_history": [],
+    "user": "test123@gmail.com"
+  },
+  {
+    "session_id": "42ecaf7d-5630-441d-8925-4424366b0cba",
+    "exercise": "Situps",
+    "timestamp": "2025-02-11T09:07:27.011969",
+    "duration": 122.8746166229248,
+    "rep_count": 0,
+    "rep_history": [],
+    "user": "test123@gmail.com"
+  },
+  {
+    "session_id": "d9f6c54a-7db4-42cb-a1c5-e75a8dabf21c",
+    "exercise": "Situps",
+    "timestamp": "2025-02-11T09:14:15.860566",
+    "duration": 10.37439751625061,
+    "rep_count": 0,
+    "rep_history": [],
+    "user": "test123@gmail.com"
+  },
+  {
+    "session_id": "9ef38336-60d2-4840-be38-a8159b10595c",
+    "exercise": "Situps",
+    "timestamp": "2025-02-11T09:26:35.245879",
+    "duration": 9.74900770187378,
+    "rep_count": 0,
+    "rep_history": [],
+    "user": "test123@gmail.com"
+  },
+  {
+    "session_id": "bec148a6-b049-477f-b52e-1ddb5b79d9ea",
+    "exercise": "Situps",
+    "timestamp": "2025-02-11T09:49:18.059945",
+    "duration": 9.072332620620728,
+    "rep_count": 0,
+    "rep_history": [],
+    "user": "test123@gmail.com"
+  },
+  {
+    "session_id": "c4029c88-cafc-4b4c-8771-b5409c4d2dbe",
+    "exercise": "Situps",
+    "timestamp": "2025-02-11T09:54:08.230965",
+    "duration": 37.72905993461609,
+    "rep_count": 0,
+    "rep_history": [
+      {
+        "timestamp": "2025-02-11T09:54:01.346890",
+        "exercise": "Situps",
+        "rep_count": 0,
+        "feedback": [
+          "Straighten your back."
+        ]
+      },
+      {
+        "timestamp": "2025-02-11T09:54:02.811607",
+        "exercise": "Situps",
+        "rep_count": 0,
+        "feedback": [
+          "Straighten your back."
+        ]
+      },
+      {
+        "timestamp": "2025-02-11T09:54:03.910705",
+        "exercise": "Situps",
+        "rep_count": 0,
+        "feedback": [
+          "Straighten your back."
+        ]
+      },
+      {
+        "timestamp": "2025-02-11T09:54:05.056636",
+        "exercise": "Situps",
+        "rep_count": 0,
+        "feedback": [
+          "Straighten your back."
+        ]
+      },
+      {
+        "timestamp": "2025-02-11T09:54:06.177749",
+        "exercise": "Situps",
+        "rep_count": 0,
+        "feedback": [
+          "Straighten your back."
+        ]
+      },
+      {
+        "timestamp": "2025-02-11T09:54:07.632185",
+        "exercise": "Situps",
+        "rep_count": 0,
+        "feedback": [
+          "Straighten your back."
+        ]
+      }
+    ],
+    "user": "test123@gmail.com"
+  },
+  {
+    "session_id": "76da4626-a387-4c4d-bb8d-a9a0f7a957e2",
+    "exercise": "Situps",
+    "timestamp": "2025-02-11T09:58:23.566758",
+    "duration": 91.82290697097778,
+    "rep_count": 0,
+    "rep_history": [
+      {
+        "timestamp": "2025-02-11T09:56:55.870337",
+        "exercise": "Situps",
+        "rep_count": 0,
+        "feedback": [
+          "Straighten your back."
+        ]
+      },
+      {
+        "timestamp": "2025-02-11T09:56:57.040988",
+        "exercise": "Situps",
+        "rep_count": 0,
+        "feedback": [
+          "Straighten your back."
+        ]
+      },
+      {
+        "timestamp": "2025-02-11T09:56:58.472900",
+        "exercise": "Situps",
+        "rep_count": 0,
+        "feedback": [
+          "Straighten your back."
+        ]
+      },
+      {
+        "timestamp": "2025-02-11T09:56:59.593228",
+        "exercise": "Situps",
+        "rep_count": 0,
+        "feedback": [
+          "Straighten your back."
+        ]
+      },
+      {
+        "timestamp": "2025-02-11T09:57:00.688806",
+        "exercise": "Situps",
+        "rep_count": 0,
+        "feedback": [
+          "Straighten your back."
+        ]
+      },
+      {
+        "timestamp": "2025-02-11T09:57:01.786288",
+        "exercise": "Situps",
+        "rep_count": 0,
+        "feedback": [
+          "Straighten your back."
+        ]
+      },
+      {
+        "timestamp": "2025-02-11T09:57:03.184366",
+        "exercise": "Situps",
+        "rep_count": 0,
+        "feedback": [
+          "Straighten your back."
+        ]
+      },
+      {
+        "timestamp": "2025-02-11T09:57:04.276482",
+        "exercise": "Situps",
+        "rep_count": 0,
+        "feedback": [
+          "Straighten your back."
+        ]
+      },
+      {
+        "timestamp": "2025-02-11T09:57:05.368653",
+        "exercise": "Situps",
+        "rep_count": 0,
+        "feedback": [
+          "Straighten your back."
+        ]
+      },
+      {
+        "timestamp": "2025-02-11T09:57:06.472310",
+        "exercise": "Situps",
+        "rep_count": 0,
+        "feedback": [
+          "Straighten your back."
+        ]
+      },
+      {
+        "timestamp": "2025-02-11T09:57:07.884288",
+        "exercise": "Situps",
+        "rep_count": 0,
+        "feedback": [
+          "Straighten your back."
+        ]
+      },
+      {
+        "timestamp": "2025-02-11T09:57:08.964354",
+        "exercise": "Situps",
+        "rep_count": 0,
+        "feedback": [
+          "Straighten your back."
+        ]
+      },
+      {
+        "timestamp": "2025-02-11T09:57:10.057418",
+        "exercise": "Situps",
+        "rep_count": 0,
+        "feedback": [
+          "Straighten your back."
+        ]
+      },
+      {
+        "timestamp": "2025-02-11T09:57:11.142746",
+        "exercise": "Situps",
+        "rep_count": 0,
+        "feedback": [
+          "Straighten your back."
+        ]
+      },
+      {
+        "timestamp": "2025-02-11T09:57:12.224267",
+        "exercise": "Situps",
+        "rep_count": 0,
+        "feedback": [
+          "Straighten your back."
+        ]
+      },
+      {
+        "timestamp": "2025-02-11T09:57:13.648216",
+        "exercise": "Situps",
+        "rep_count": 0,
+        "feedback": [
+          "Straighten your back."
+        ]
+      },
+      {
+        "timestamp": "2025-02-11T09:57:14.743451",
+        "exercise": "Situps",
+        "rep_count": 0,
+        "feedback": [
+          "Straighten your back."
+        ]
+      },
+      {
+        "timestamp": "2025-02-11T09:57:15.841658",
+        "exercise": "Situps",
+        "rep_count": 0,
+        "feedback": [
+          "Straighten your back."
+        ]
+      },
+      {
+        "timestamp": "2025-02-11T09:57:16.918444",
+        "exercise": "Situps",
+        "rep_count": 0,
+        "feedback": [
+          "Straighten your back."
+        ]
+      },
+      {
+        "timestamp": "2025-02-11T09:57:18.661750",
+        "exercise": "Situps",
+        "rep_count": 0,
+        "feedback": [
+          "Straighten your back."
+        ]
+      },
+      {
+        "timestamp": "2025-02-11T09:57:19.757932",
+        "exercise": "Situps",
+        "rep_count": 0,
+        "feedback": [
+          "Straighten your back."
+        ]
+      },
+      {
+        "timestamp": "2025-02-11T09:57:20.892219",
+        "exercise": "Situps",
+        "rep_count": 0,
+        "feedback": [
+          "Straighten your back."
+        ]
+      },
+      {
+        "timestamp": "2025-02-11T09:57:21.989909",
+        "exercise": "Situps",
+        "rep_count": 0,
+        "feedback": [
+          "Straighten your back."
+        ]
+      },
+      {
+        "timestamp": "2025-02-11T09:57:23.412973",
+        "exercise": "Situps",
+        "rep_count": 0,
+        "feedback": [
+          "Straighten your back."
+        ]
+      },
+      {
+        "timestamp": "2025-02-11T09:57:24.514697",
+        "exercise": "Situps",
+        "rep_count": 0,
+        "feedback": [
+          "Straighten your back."
+        ]
+      },
+      {
+        "timestamp": "2025-02-11T09:57:25.621031",
+        "exercise": "Situps",
+        "rep_count": 0,
+        "feedback": [
+          "Straighten your back."
+        ]
+      },
+      {
+        "timestamp": "2025-02-11T09:57:26.710577",
+        "exercise": "Situps",
+        "rep_count": 0,
+        "feedback": [
+          "Straighten your back."
+        ]
+      },
+      {
+        "timestamp": "2025-02-11T09:57:28.112392",
+        "exercise": "Situps",
+        "rep_count": 0,
+        "feedback": [
+          "Straighten your back."
+        ]
+      },
+      {
+        "timestamp": "2025-02-11T09:57:29.216067",
+        "exercise": "Situps",
+        "rep_count": 0,
+        "feedback": [
+          "Straighten your back."
+        ]
+      },
+      {
+        "timestamp": "2025-02-11T09:57:30.313363",
+        "exercise": "Situps",
+        "rep_count": 0,
+        "feedback": [
+          "Straighten your back."
+        ]
+      },
+      {
+        "timestamp": "2025-02-11T09:57:31.394814",
+        "exercise": "Situps",
+        "rep_count": 0,
+        "feedback": [
+          "Straighten your back."
+        ]
+      },
+      {
+        "timestamp": "2025-02-11T09:57:32.799543",
+        "exercise": "Situps",
+        "rep_count": 0,
+        "feedback": [
+          "Straighten your back."
+        ]
+      },
+      {
+        "timestamp": "2025-02-11T09:57:33.890558",
+        "exercise": "Situps",
+        "rep_count": 0,
+        "feedback": [
+          "Straighten your back."
+        ]
+      },
+      {
+        "timestamp": "2025-02-11T09:57:34.988525",
+        "exercise": "Situps",
+        "rep_count": 0,
+        "feedback": [
+          "Straighten your back."
+        ]
+      },
+      {
+        "timestamp": "2025-02-11T09:57:36.075241",
+        "exercise": "Situps",
+        "rep_count": 0,
+        "feedback": [
+          "Straighten your back."
+        ]
+      },
+      {
+        "timestamp": "2025-02-11T09:57:37.212262",
+        "exercise": "Situps",
+        "rep_count": 0,
+        "feedback": [
+          "Straighten your back."
+        ]
+      },
+      {
+        "timestamp": "2025-02-11T09:57:38.630465",
+        "exercise": "Situps",
+        "rep_count": 0,
+        "feedback": [
+          "Straighten your back."
+        ]
+      },
+      {
+        "timestamp": "2025-02-11T09:57:39.746552",
+        "exercise": "Situps",
+        "rep_count": 0,
+        "feedback": [
+          "Straighten your back."
+        ]
+      },
+      {
+        "timestamp": "2025-02-11T09:57:40.856504",
+        "exercise": "Situps",
+        "rep_count": 0,
+        "feedback": [
+          "Straighten your back."
+        ]
+      },
+      {
+        "timestamp": "2025-02-11T09:57:41.948644",
+        "exercise": "Situps",
+        "rep_count": 0,
+        "feedback": [
+          "Straighten your back."
+        ]
+      },
+      {
+        "timestamp": "2025-02-11T09:57:43.369850",
+        "exercise": "Situps",
+        "rep_count": 0,
+        "feedback": [
+          "Straighten your back."
+        ]
+      },
+      {
+        "timestamp": "2025-02-11T09:57:44.448944",
+        "exercise": "Situps",
+        "rep_count": 0,
+        "feedback": [
+          "Straighten your back."
+        ]
+      },
+      {
+        "timestamp": "2025-02-11T09:57:45.532895",
+        "exercise": "Situps",
+        "rep_count": 0,
+        "feedback": [
+          "Straighten your back."
+        ]
+      },
+      {
+        "timestamp": "2025-02-11T09:57:46.620263",
+        "exercise": "Situps",
+        "rep_count": 0,
+        "feedback": [
+          "Straighten your back."
+        ]
+      },
+      {
+        "timestamp": "2025-02-11T09:57:47.709555",
+        "exercise": "Situps",
+        "rep_count": 0,
+        "feedback": [
+          "Straighten your back."
+        ]
+      },
+      {
+        "timestamp": "2025-02-11T09:57:48.803138",
+        "exercise": "Situps",
+        "rep_count": 0,
+        "feedback": [
+          "Straighten your back."
+        ]
+      },
+      {
+        "timestamp": "2025-02-11T09:57:49.907353",
+        "exercise": "Situps",
+        "rep_count": 0,
+        "feedback": [
+          "Straighten your back."
+        ]
+      },
+      {
+        "timestamp": "2025-02-11T09:57:50.984786",
+        "exercise": "Situps",
+        "rep_count": 0,
+        "feedback": [
+          "Straighten your back."
+        ]
+      },
+      {
+        "timestamp": "2025-02-11T09:57:52.080225",
+        "exercise": "Situps",
+        "rep_count": 0,
+        "feedback": [
+          "Straighten your back."
+        ]
+      },
+      {
+        "timestamp": "2025-02-11T09:57:53.493840",
+        "exercise": "Situps",
+        "rep_count": 0,
+        "feedback": [
+          "Straighten your back."
+        ]
+      },
+      {
+        "timestamp": "2025-02-11T09:57:54.571917",
+        "exercise": "Situps",
+        "rep_count": 0,
+        "feedback": [
+          "Straighten your back."
+        ]
+      },
+      {
+        "timestamp": "2025-02-11T09:57:55.677286",
+        "exercise": "Situps",
+        "rep_count": 0,
+        "feedback": [
+          "Straighten your back."
+        ]
+      },
+      {
+        "timestamp": "2025-02-11T09:57:56.773181",
+        "exercise": "Situps",
+        "rep_count": 0,
+        "feedback": [
+          "Straighten your back."
+        ]
+      },
+      {
+        "timestamp": "2025-02-11T09:57:57.861162",
+        "exercise": "Situps",
+        "rep_count": 0,
+        "feedback": [
+          "Straighten your back."
+        ]
+      },
+      {
+        "timestamp": "2025-02-11T09:57:58.979524",
+        "exercise": "Situps",
+        "rep_count": 0,
+        "feedback": [
+          "Straighten your back."
+        ]
+      },
+      {
+        "timestamp": "2025-02-11T09:58:00.105659",
+        "exercise": "Situps",
+        "rep_count": 0,
+        "feedback": [
+          "Straighten your back."
+        ]
+      },
+      {
+        "timestamp": "2025-02-11T09:58:01.204691",
+        "exercise": "Situps",
+        "rep_count": 0,
+        "feedback": [
+          "Straighten your back."
+        ]
+      },
+      {
+        "timestamp": "2025-02-11T09:58:02.293716",
+        "exercise": "Situps",
+        "rep_count": 0,
+        "feedback": [
+          "Straighten your back."
+        ]
+      },
+      {
+        "timestamp": "2025-02-11T09:58:03.695619",
+        "exercise": "Situps",
+        "rep_count": 0,
+        "feedback": [
+          "Straighten your back."
+        ]
+      },
+      {
+        "timestamp": "2025-02-11T09:58:04.857717",
+        "exercise": "Situps",
+        "rep_count": 0,
+        "feedback": [
+          "Straighten your back."
+        ]
+      },
+      {
+        "timestamp": "2025-02-11T09:58:06.327781",
+        "exercise": "Situps",
+        "rep_count": 0,
+        "feedback": [
+          "Straighten your back."
+        ]
+      },
+      {
+        "timestamp": "2025-02-11T09:58:07.832482",
+        "exercise": "Situps",
+        "rep_count": 0,
+        "feedback": [
+          "Straighten your back."
+        ]
+      },
+      {
+        "timestamp": "2025-02-11T09:58:08.970020",
+        "exercise": "Situps",
+        "rep_count": 0,
+        "feedback": [
+          "Straighten your back."
+        ]
+      },
+      {
+        "timestamp": "2025-02-11T09:58:10.098437",
+        "exercise": "Situps",
+        "rep_count": 0,
+        "feedback": [
+          "Straighten your back."
+        ]
+      },
+      {
+        "timestamp": "2025-02-11T09:58:11.239081",
+        "exercise": "Situps",
+        "rep_count": 0,
+        "feedback": [
+          "Straighten your back."
+        ]
+      },
+      {
+        "timestamp": "2025-02-11T09:58:12.341041",
+        "exercise": "Situps",
+        "rep_count": 0,
+        "feedback": [
+          "Straighten your back."
+        ]
+      },
+      {
+        "timestamp": "2025-02-11T09:58:13.803109",
+        "exercise": "Situps",
+        "rep_count": 0,
+        "feedback": [
+          "Straighten your back."
+        ]
+      },
+      {
+        "timestamp": "2025-02-11T09:58:14.928001",
+        "exercise": "Situps",
+        "rep_count": 0,
+        "feedback": [
+          "Straighten your back."
+        ]
+      },
+      {
+        "timestamp": "2025-02-11T09:58:16.040790",
+        "exercise": "Situps",
+        "rep_count": 0,
+        "feedback": [
+          "Straighten your back."
+        ]
+      },
+      {
+        "timestamp": "2025-02-11T09:58:17.143183",
+        "exercise": "Situps",
+        "rep_count": 0,
+        "feedback": [
+          "Straighten your back."
+        ]
+      },
+      {
+        "timestamp": "2025-02-11T09:58:18.250459",
+        "exercise": "Situps",
+        "rep_count": 0,
+        "feedback": [
+          "Straighten your back."
+        ]
+      },
+      {
+        "timestamp": "2025-02-11T09:58:19.357320",
+        "exercise": "Situps",
+        "rep_count": 0,
+        "feedback": [
+          "Straighten your back."
+        ]
+      },
+      {
+        "timestamp": "2025-02-11T09:58:20.470340",
+        "exercise": "Situps",
+        "rep_count": 0,
+        "feedback": [
+          "Straighten your back."
+        ]
+      },
+      {
+        "timestamp": "2025-02-11T09:58:21.578520",
+        "exercise": "Situps",
+        "rep_count": 0,
+        "feedback": [
+          "Straighten your back."
+        ]
+      },
+      {
+        "timestamp": "2025-02-11T09:58:23.002158",
+        "exercise": "Situps",
+        "rep_count": 0,
+        "feedback": [
+          "Straighten your back."
+        ]
+      }
+    ],
+    "user": "test123@gmail.com"
+  },
+  {
+    "session_id": "21ebd4d8-2c81-40fc-90d7-d1abb3ca802c",
+    "exercise": "Situps",
+    "timestamp": "2025-02-11T10:43:52.017653",
+    "duration": 36.650726079940796,
+    "rep_count": 0,
+    "rep_history": [],
+    "user": "test123@gmail.com"
+  },
+  {
+    "session_id": "1602973c-b963-4c31-a0f1-c19322d55458",
+    "exercise": "Situps",
+    "timestamp": "2025-02-11T10:49:22.221019",
+    "duration": 50.42564034461975,
+    "rep_count": 0,
+    "rep_history": [
+      {
+        "timestamp": "2025-02-11T10:48:37.713404",
+        "exercise": "Situps",
+        "rep_count": 0,
+        "feedback": [
+          "Straighten your back."
+        ]
+      },
+      {
+        "timestamp": "2025-02-11T10:48:39.296930",
+        "exercise": "Situps",
+        "rep_count": 0,
+        "feedback": [
+          "Straighten your back."
+        ]
+      },
+      {
+        "timestamp": "2025-02-11T10:48:40.453843",
+        "exercise": "Situps",
+        "rep_count": 0,
+        "feedback": [
+          "Straighten your back."
+        ]
+      },
+      {
+        "timestamp": "2025-02-11T10:48:41.844249",
+        "exercise": "Situps",
+        "rep_count": 0,
+        "feedback": [
+          "Straighten your back."
+        ]
+      },
+      {
+        "timestamp": "2025-02-11T10:48:42.977088",
+        "exercise": "Situps",
+        "rep_count": 0,
+        "feedback": [
+          "Straighten your back."
+        ]
+      },
+      {
+        "timestamp": "2025-02-11T10:48:44.113469",
+        "exercise": "Situps",
+        "rep_count": 0,
+        "feedback": [
+          "Straighten your back."
+        ]
+      },
+      {
+        "timestamp": "2025-02-11T10:48:45.229467",
+        "exercise": "Situps",
+        "rep_count": 0,
+        "feedback": [
+          "Straighten your back."
+        ]
+      },
+      {
+        "timestamp": "2025-02-11T10:48:46.417092",
+        "exercise": "Situps",
+        "rep_count": 0,
+        "feedback": [
+          "Straighten your back."
+        ]
+      },
+      {
+        "timestamp": "2025-02-11T10:48:47.596604",
+        "exercise": "Situps",
+        "rep_count": 0,
+        "feedback": [
+          "Straighten your back."
+        ]
+      },
+      {
+        "timestamp": "2025-02-11T10:48:48.690631",
+        "exercise": "Situps",
+        "rep_count": 0,
+        "feedback": [
+          "Straighten your back."
+        ]
+      },
+      {
+        "timestamp": "2025-02-11T10:48:49.794468",
+        "exercise": "Situps",
+        "rep_count": 0,
+        "feedback": [
+          "Straighten your back."
+        ]
+      },
+      {
+        "timestamp": "2025-02-11T10:48:50.911515",
+        "exercise": "Situps",
+        "rep_count": 0,
+        "feedback": [
+          "Straighten your back."
+        ]
+      },
+      {
+        "timestamp": "2025-02-11T10:48:52.327713",
+        "exercise": "Situps",
+        "rep_count": 0,
+        "feedback": [
+          "Straighten your back."
+        ]
+      },
+      {
+        "timestamp": "2025-02-11T10:48:53.444663",
+        "exercise": "Situps",
+        "rep_count": 0,
+        "feedback": [
+          "Straighten your back."
+        ]
+      },
+      {
+        "timestamp": "2025-02-11T10:48:54.565536",
+        "exercise": "Situps",
+        "rep_count": 0,
+        "feedback": [
+          "Straighten your back."
+        ]
+      },
+      {
+        "timestamp": "2025-02-11T10:48:55.658880",
+        "exercise": "Situps",
+        "rep_count": 0,
+        "feedback": [
+          "Straighten your back."
+        ]
+      },
+      {
+        "timestamp": "2025-02-11T10:48:57.067618",
+        "exercise": "Situps",
+        "rep_count": 0,
+        "feedback": [
+          "Straighten your back."
+        ]
+      },
+      {
+        "timestamp": "2025-02-11T10:48:58.179308",
+        "exercise": "Situps",
+        "rep_count": 0,
+        "feedback": [
+          "Straighten your back."
+        ]
+      },
+      {
+        "timestamp": "2025-02-11T10:48:59.287545",
+        "exercise": "Situps",
+        "rep_count": 0,
+        "feedback": [
+          "Straighten your back."
+        ]
+      },
+      {
+        "timestamp": "2025-02-11T10:49:00.370710",
+        "exercise": "Situps",
+        "rep_count": 0,
+        "feedback": [
+          "Straighten your back."
+        ]
+      },
+      {
+        "timestamp": "2025-02-11T10:49:01.774738",
+        "exercise": "Situps",
+        "rep_count": 0,
+        "feedback": [
+          "Straighten your back."
+        ]
+      },
+      {
+        "timestamp": "2025-02-11T10:49:02.858777",
+        "exercise": "Situps",
+        "rep_count": 0,
+        "feedback": [
+          "Straighten your back."
+        ]
+      },
+      {
+        "timestamp": "2025-02-11T10:49:03.946536",
+        "exercise": "Situps",
+        "rep_count": 0,
+        "feedback": [
+          "Straighten your back."
+        ]
+      },
+      {
+        "timestamp": "2025-02-11T10:49:05.065543",
+        "exercise": "Situps",
+        "rep_count": 0,
+        "feedback": [
+          "Straighten your back."
+        ]
+      },
+      {
+        "timestamp": "2025-02-11T10:49:06.158142",
+        "exercise": "Situps",
+        "rep_count": 0,
+        "feedback": [
+          "Straighten your back."
+        ]
+      },
+      {
+        "timestamp": "2025-02-11T10:49:07.566327",
+        "exercise": "Situps",
+        "rep_count": 0,
+        "feedback": [
+          "Straighten your back."
+        ]
+      },
+      {
+        "timestamp": "2025-02-11T10:49:08.732951",
+        "exercise": "Situps",
+        "rep_count": 0,
+        "feedback": [
+          "Straighten your back."
+        ]
+      },
+      {
+        "timestamp": "2025-02-11T10:49:09.869572",
+        "exercise": "Situps",
+        "rep_count": 0,
+        "feedback": [
+          "Straighten your back."
+        ]
+      },
+      {
+        "timestamp": "2025-02-11T10:49:11.079507",
+        "exercise": "Situps",
+        "rep_count": 0,
+        "feedback": [
+          "Straighten your back."
+        ]
+      },
+      {
+        "timestamp": "2025-02-11T10:49:12.564381",
+        "exercise": "Situps",
+        "rep_count": 0,
+        "feedback": [
+          "Straighten your back."
+        ]
+      },
+      {
+        "timestamp": "2025-02-11T10:49:13.685416",
+        "exercise": "Situps",
+        "rep_count": 0,
+        "feedback": [
+          "Straighten your back."
+        ]
+      },
+      {
+        "timestamp": "2025-02-11T10:49:14.784637",
+        "exercise": "Situps",
+        "rep_count": 0,
+        "feedback": [
+          "Straighten your back."
+        ]
+      },
+      {
+        "timestamp": "2025-02-11T10:49:15.905381",
+        "exercise": "Situps",
+        "rep_count": 0,
+        "feedback": [
+          "Straighten your back."
+        ]
+      },
+      {
+        "timestamp": "2025-02-11T10:49:17.418234",
+        "exercise": "Situps",
+        "rep_count": 0,
+        "feedback": [
+          "Straighten your back."
+        ]
+      },
+      {
+        "timestamp": "2025-02-11T10:49:18.516438",
+        "exercise": "Situps",
+        "rep_count": 0,
+        "feedback": [
+          "Straighten your back."
+        ]
+      },
+      {
+        "timestamp": "2025-02-11T10:49:19.627544",
+        "exercise": "Situps",
+        "rep_count": 0,
+        "feedback": [
+          "Straighten your back."
+        ]
+      },
+      {
+        "timestamp": "2025-02-11T10:49:20.731730",
+        "exercise": "Situps",
+        "rep_count": 0,
+        "feedback": [
+          "Straighten your back."
+        ]
+      },
+      {
+        "timestamp": "2025-02-11T10:49:22.142644",
+        "exercise": "Situps",
+        "rep_count": 0,
+        "feedback": [
+          "Straighten your back."
+        ]
+      }
+    ],
+    "user": "test123@gmail.com"
+  },
+  {
+    "session_id": "95359715-9f27-49fd-9c55-1a85694b5d81",
+    "exercise": "Plank",
+    "timestamp": "2025-02-11T10:49:38.872307",
+    "duration": 10.93934416770935,
+    "rep_count": 0,
+    "rep_history": [
+      {
+        "timestamp": "2025-02-11T10:49:29.033469",
+        "exercise": "Plank",
+        "rep_count": 0,
+        "feedback": [
+          "Align your hips and ankles; avoid raising or lowering your hips."
+        ]
+      },
+      {
+        "timestamp": "2025-02-11T10:49:30.221539",
+        "exercise": "Plank",
+        "rep_count": 0,
+        "feedback": [
+          "Align your hips and ankles; avoid raising or lowering your hips."
+        ]
+      },
+      {
+        "timestamp": "2025-02-11T10:49:31.335677",
+        "exercise": "Plank",
+        "rep_count": 0,
+        "feedback": [
+          "Align your hips and ankles; avoid raising or lowering your hips."
+        ]
+      },
+      {
+        "timestamp": "2025-02-11T10:49:32.435266",
+        "exercise": "Plank",
+        "rep_count": 0,
+        "feedback": [
+          "Align your hips and ankles; avoid raising or lowering your hips."
+        ]
+      },
+      {
+        "timestamp": "2025-02-11T10:49:33.549110",
+        "exercise": "Plank",
+        "rep_count": 0,
+        "feedback": [
+          "Align your hips and ankles; avoid raising or lowering your hips."
+        ]
+      },
+      {
+        "timestamp": "2025-02-11T10:49:34.710653",
+        "exercise": "Plank",
+        "rep_count": 0,
+        "feedback": [
+          "Align your hips and ankles; avoid raising or lowering your hips."
+        ]
+      },
+      {
+        "timestamp": "2025-02-11T10:49:35.807095",
+        "exercise": "Plank",
+        "rep_count": 0,
+        "feedback": [
+          "Align your hips and ankles; avoid raising or lowering your hips."
+        ]
+      },
+      {
+        "timestamp": "2025-02-11T10:49:37.212396",
+        "exercise": "Plank",
+        "rep_count": 0,
+        "feedback": [
+          "Align your hips and ankles; avoid raising or lowering your hips."
+        ]
+      },
+      {
+        "timestamp": "2025-02-11T10:49:38.470884",
+        "exercise": "Plank",
+        "rep_count": 0,
+        "feedback": [
+          "Align your hips and ankles; avoid raising or lowering your hips."
+        ]
+      }
+    ],
+    "user": "test123@gmail.com"
+  },
+  {
+    "session_id": "fb1a96e3-6954-4180-b4a3-20af17a097f3",
+    "exercise": "Situps",
+    "timestamp": "2025-02-11T17:31:25.386887",
+    "duration": 14.390659809112549,
+    "rep_count": 0,
+    "rep_history": [
+      {
+        "timestamp": "2025-02-11T17:31:15.524593",
+        "exercise": "Situps",
+        "rep_count": 0,
+        "feedback": [
+          "Straighten your back."
+        ]
+      },
+      {
+        "timestamp": "2025-02-11T17:31:16.611194",
+        "exercise": "Situps",
+        "rep_count": 0,
+        "feedback": [
+          "Straighten your back."
+        ]
+      },
+      {
+        "timestamp": "2025-02-11T17:31:17.703634",
+        "exercise": "Situps",
+        "rep_count": 0,
+        "feedback": [
+          "Straighten your back."
+        ]
+      },
+      {
+        "timestamp": "2025-02-11T17:31:18.964638",
+        "exercise": "Situps",
+        "rep_count": 0,
+        "feedback": [
+          "Straighten your back."
+        ]
+      },
+      {
+        "timestamp": "2025-02-11T17:31:20.388511",
+        "exercise": "Situps",
+        "rep_count": 0,
+        "feedback": [
+          "Straighten your back."
+        ]
+      },
+      {
+        "timestamp": "2025-02-11T17:31:21.475637",
+        "exercise": "Situps",
+        "rep_count": 0,
+        "feedback": [
+          "Straighten your back."
+        ]
+      },
+      {
+        "timestamp": "2025-02-11T17:31:22.597400",
+        "exercise": "Situps",
+        "rep_count": 0,
+        "feedback": [
+          "Straighten your back."
+        ]
+      },
+      {
+        "timestamp": "2025-02-11T17:31:23.702841",
+        "exercise": "Situps",
+        "rep_count": 0,
+        "feedback": [
+          "Straighten your back."
+        ]
+      },
+      {
+        "timestamp": "2025-02-11T17:31:25.098590",
+        "exercise": "Situps",
+        "rep_count": 0,
+        "feedback": [
+          "Straighten your back."
+        ]
+      }
+    ],
+    "user": "test123@gmail.com"
+  },
+  {
+    "session_id": "139d5c6a-fe79-46e9-90b6-4f6a9f11131b",
+    "exercise": "Curls",
+    "timestamp": "2025-02-11T17:31:51.510592",
+    "duration": 6.366848468780518,
+    "rep_count": 0,
+    "rep_history": [
+      {
+        "timestamp": "2025-02-11T17:31:46.202758",
+        "exercise": "Curls",
+        "rep_count": 0,
+        "feedback": [
+          "Maintain 90 degree elbow bend."
+        ]
+      },
+      {
+        "timestamp": "2025-02-11T17:31:47.382035",
+        "exercise": "Curls",
+        "rep_count": 0,
+        "feedback": [
+          "Maintain 90 degree elbow bend."
+        ]
+      },
+      {
+        "timestamp": "2025-02-11T17:31:48.516575",
+        "exercise": "Curls",
+        "rep_count": 0,
+        "feedback": [
+          "Maintain 90 degree elbow bend."
+        ]
+      },
+      {
+        "timestamp": "2025-02-11T17:31:49.990673",
+        "exercise": "Curls",
+        "rep_count": 0,
+        "feedback": [
+          "Maintain 90 degree elbow bend."
+        ]
+      },
+      {
+        "timestamp": "2025-02-11T17:31:51.131027",
+        "exercise": "Curls",
+        "rep_count": 0,
+        "feedback": [
+          "Maintain 90 degree elbow bend."
+        ]
+      }
+    ],
+    "user": "test123@gmail.com"
+  },
+  {
+    "session_id": "ae109081-9764-4576-8aeb-d80f14392171",
+    "exercise": "Situps",
+    "timestamp": "2025-02-11T17:46:11.568193",
+    "duration": 10.958138227462769,
+    "rep_count": 0,
+    "rep_history": [
+      {
+        "timestamp": "2025-02-11T17:46:02.639947",
+        "exercise": "Situps",
+        "rep_count": 0,
+        "feedback": [
+          "Straighten your back."
+        ]
+      },
+      {
+        "timestamp": "2025-02-11T17:46:03.743115",
+        "exercise": "Situps",
+        "rep_count": 0,
+        "feedback": [
+          "Straighten your back."
+        ]
+      },
+      {
+        "timestamp": "2025-02-11T17:46:04.881288",
+        "exercise": "Situps",
+        "rep_count": 0,
+        "feedback": [
+          "Straighten your back."
+        ]
+      },
+      {
+        "timestamp": "2025-02-11T17:46:06.286416",
+        "exercise": "Situps",
+        "rep_count": 0,
+        "feedback": [
+          "Straighten your back."
+        ]
+      },
+      {
+        "timestamp": "2025-02-11T17:46:07.367632",
+        "exercise": "Situps",
+        "rep_count": 0,
+        "feedback": [
+          "Straighten your back."
+        ]
+      },
+      {
+        "timestamp": "2025-02-11T17:46:08.448736",
+        "exercise": "Situps",
+        "rep_count": 0,
+        "feedback": [
+          "Straighten your back."
+        ]
+      },
+      {
+        "timestamp": "2025-02-11T17:46:09.524861",
+        "exercise": "Situps",
+        "rep_count": 0,
+        "feedback": [
+          "Straighten your back."
+        ]
+      },
+      {
+        "timestamp": "2025-02-11T17:46:10.907507",
+        "exercise": "Situps",
+        "rep_count": 0,
+        "feedback": [
+          "Straighten your back."
+        ]
+      }
+    ],
+    "user": "test123@gmail.com"
+  },
+  {
+    "session_id": "6c991889-df97-44ff-8e85-11d3c54762a2",
+    "exercise": "Bench Press",
+    "timestamp": "2025-02-11T17:46:25.988479",
+    "duration": 3.6026196479797363,
+    "rep_count": 0,
+    "rep_history": [
+      {
+        "timestamp": "2025-02-11T17:46:23.478362",
+        "exercise": "Bench Press",
+        "rep_count": 0,
+        "feedback": []
+      },
+      {
+        "timestamp": "2025-02-11T17:46:24.564133",
+        "exercise": "Bench Press",
+        "rep_count": 0,
+        "feedback": []
+      },
+      {
+        "timestamp": "2025-02-11T17:46:25.969488",
+        "exercise": "Bench Press",
+        "rep_count": 0,
+        "feedback": []
+      }
+    ],
+    "user": "test123@gmail.com"
+  }
+]

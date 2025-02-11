@@ -13,21 +13,40 @@ const LoginScreen = ({ onLogin }) => {
         setError(null); // Clear previous errors
 
         try {
-            const response = await fetch('/login', { // Your backend login endpoint
+            const response = await fetch('http://localhost:8000/login', {
                 method: 'POST',
                 headers: {
-                    'Content-Type': 'application/x-www-form-urlencoded', // Important for form data
+                    'Content-Type': 'application/json',
                 },
-                body: `username=${email}&password=${password}`, // URL-encoded form data
+                body: JSON.stringify({ username: email, password }),
             });
 
             if (response.ok) {
-                const data = await response.json();
-                onLogin(data.access_token); // Call onLogin with the received token
-                navigate('/trainer'); // Redirect to trainer page
+                const text = await response.text();
+                const data = text ? JSON.parse(text) : {};
+
+                if (data.access_token) {
+                    localStorage.setItem('token', data.access_token);
+                    onLogin(data.access_token);
+                    navigate('/trainer');
+                } else {
+                    setError("Login successful, but no token received.");
+                }
             } else {
-                const errorData = await response.json();
-                setError(errorData.detail || "Invalid email or password"); // Set error message
+                const errorText = await response.text();
+                try {
+                    const errorData = JSON.parse(errorText);
+
+                    // *** KEY CHANGE HERE ***
+                    const errorMessage = typeof errorData.detail === 'string' ? 
+                                          errorData.detail : // Use detail if it's a string
+                                          (errorData.detail?.message || errorData.detail?.msg || errorData.detail?.detail || "Invalid email or password"); // Fallback, including detail
+
+                    setError(errorMessage);
+
+                } catch (parseError) {  // Catch JSON parsing errors
+                    setError(errorText || "Invalid email or password");
+                }
             }
         } catch (err) {
             console.error("Login Error:", err);
@@ -38,7 +57,7 @@ const LoginScreen = ({ onLogin }) => {
     return (
         <div className="login-container">
             <h2>Login</h2>
-            {error && <p className="error-message">{error}</p>} {/* Display error message */}
+            {error && <p className="error-message">{error}</p>}
             <form onSubmit={handleSubmit}>
                 <input
                     type="email"

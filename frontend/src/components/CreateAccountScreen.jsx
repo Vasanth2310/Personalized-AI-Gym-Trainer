@@ -1,53 +1,52 @@
 import React, { useState } from 'react';
-import { useNavigate } from 'react-router-dom';  // Import useNavigate
+import { useNavigate, Link } from 'react-router-dom';  // Use Link for navigation
 import './CreateAccountScreen.css';
 
 const CreateAccountScreen = () => {
-    const navigate = useNavigate(); // Initialize useNavigate
+    const navigate = useNavigate(); 
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
-    const [error, setError] = useState(null); // State for error messages
-    const [successMessage, setSuccessMessage] = useState(null); // State for success message
+    const [error, setError] = useState(null);
+    const [successMessage, setSuccessMessage] = useState(null);
 
     const handleSubmit = async (e) => {
         e.preventDefault();
-        setError(null); // Clear previous errors
-        setSuccessMessage(null); // Clear previous success messages
+        setError(null);
+        setSuccessMessage(null);
 
         try {
-            const response = await fetch('/register', { // Your backend registration endpoint
+            const response = await fetch('http://localhost:8000/register', { // Adjust URL as needed
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
                 },
                 body: JSON.stringify({
-                    username: email, // Assuming email is used as username
+                    username: email,  // Email used as username
                     password: password,
-                    // Add other fields if needed (e.g., name)
+                    name: name  // Include the missing name field
                 }),
             });
 
+            const data = await response.json();
+
             if (response.ok) {
-                const data = await response.json();
                 setSuccessMessage(data.message || "Account created successfully!");
-                // Optionally redirect after successful registration:
-                setTimeout(() => navigate('/login'), 2000); // Redirect after 2 seconds
+                setTimeout(() => navigate('/login'), 2000);
             } else {
-                const errorData = await response.json();
-                setError(errorData.detail || "Error creating account. Please try again.");
+                setError(data.detail || "Error creating account. Please try again.");
             }
         } catch (err) {
             console.error("Registration Error:", err);
-            setError("An error occurred during registration. Please try again later.");
+            setError("An unexpected error occurred. Please try again later.");
         }
     };
 
     return (
         <div className="create-account-container">
             <h2>Create Account</h2>
-            {error && <p className="error-message">{error}</p>} {/* Display error message */}
-            {successMessage && <p className="success-message">{successMessage}</p>} {/* Display success message */}
+            {error && <p className="error-message">{error}</p>}
+            {successMessage && <p className="success-message">{successMessage}</p>}
             <form onSubmit={handleSubmit}>
                 <input
                     type="text"
@@ -71,7 +70,7 @@ const CreateAccountScreen = () => {
                     required
                 />
                 <button type="submit">Create Account</button>
-                <p>Already have an account? <a href="/login">Login</a></p>
+                <p>Already have an account? <Link to="/login">Login</Link></p> 
             </form>
         </div>
     );
