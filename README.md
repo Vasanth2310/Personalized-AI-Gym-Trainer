@@ -18,48 +18,12 @@
 
 ## 📂 Repository Structure
 
-```sh
-└── ai_fitness_trainer_v2/
-    ├── backend/
-    │   ├── main.py
-    │   ├── requirements.txt
-    │   ├── s_6_best.pt
-    │   └── utils/
-    │       ├── condition_check.py
-    │       ├── countings.py
-    │       └── yolo_model.py
-    └── frontend/
-        ├── .eslintrc.cjs
-        ├── index.html
-        ├── package-lock.json
-        ├── package.json
-        ├── postcss.config.js
-        ├── public/
-        ├── src/
-        │   ├── App.css
-        │   ├── App.jsx
-        │   ├── App.test.jsx
-        │   ├── components/
-        │   ├── index.css
-        │   ├── main.jsx
-        │   ├── reportWebVitals.jsx
-        │   ├── routes/
-        │   └── setupTests.js
-        ├── tailwind.config.js
-        └── vite.config.js
-```
-
----
 
 ## ⚙️ Modules
 
 ### Backend
 
-- **`main.py`** - Runs the FastAPI server and handles requests.
-- **`s_6_best.pt`** - Pre-trained YOLOv8 model for pose detection.
-- **`utils/condition_check.py`** - Evaluates exercise correctness.
-- **`utils/countings.py`** - Counts exercise repetitions.
-- **`utils/yolo_model.py`** - Loads and processes pose detection using YOLO.
+
 
 ### Frontend
 
@@ -74,20 +38,19 @@
 1. Clone the repository:
 
 ```sh
-git clone https://github.com/vasanth_mark_23/ai_fitness_trainer_v2
+git clone https://github.com/Vasanth2310/Personalized-AI-Gym-Trainer
 ```
 
 2. Navigate to the project directory:
 
 ```sh
-cd ai_fitness_trainer_v2
+cd Personalized-AI-Gym-Trainer
 ```
 
 3. Install backend dependencies:
 
 ```sh
 cd backend
-pip install -r requirements.txt
 ```
 
 4. Install frontend dependencies:
@@ -117,10 +80,10 @@ npm run dev
 
 ## 🛣 Project Roadmap
 
-> - [X] `ℹ️  Task 1: YOLOv8 Integration`
-> - [X] `ℹ️  Task 2: React UI Implementation`
-> - [X] `ℹ️  Task 3: FastAPI Backend`
-> - [X] `ℹ️  Task 4: Documentation`
+> - [X] `ℹ️  Task 1: `
+> - [X] `ℹ️  Task 2: `
+> - [X] `ℹ️  Task 3: `
+> - [X] `ℹ️  Task 4: `
 
 ---
 

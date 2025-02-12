@@ -2,6 +2,8 @@ import numpy as np
 import mediapipe as mp
 import time
 import logging
+import pickle
+from ultralytics import YOLO
 
 logging.basicConfig(level=logging.DEBUG)
 logger = logging.getLogger(__name__)
@@ -10,6 +12,18 @@ mp_pose = mp.solutions.pose
 mp_drawing = mp.solutions.drawing_utils
 pose = mp_pose.Pose(min_detection_confidence=0.5, min_tracking_confidence=0.5)
 print("Pose model loaded successfully:", pose)
+
+#Loading Models
+# Load model
+with open("D://MediaTrix//AI based Fitness WebApp//mark_1//Models//bicep//KNN_model.pkl", "rb") as f:
+    bicep_model = pickle.load(f)
+with open("D://MediaTrix//AI based Fitness WebApp//mark_1//Models//plank//LR_model.pkl", "rb") as f:
+    plank_model = pickle.load(f)
+with open("D://MediaTrix//AI based Fitness WebApp//mark_1//Models//pushup//RF_model.pkl", "rb") as f:
+    pushup_model = pickle.load(f)
+with open("D://MediaTrix//AI based Fitness WebApp//mark_1//Models//squat//LR_model.pkl", "rb") as f:
+    count_model = pickle.load(f)
+pose_model = YOLO("D://MediaTrix//AI based Fitness WebApp//mark_1//Models//Excercise_Model.pt")
 
 def calculate_angle(p1, p2, p3):
     x1, y1 = p1

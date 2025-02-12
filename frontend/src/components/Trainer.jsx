@@ -83,13 +83,6 @@ const Trainer = ({ onLogout }) => {
 
     }, [token, navigate]);
 
-    //useEffect(() => {
-        //if (sessionId) {
-            //fetchExerciseData('daily');
-            //fetchExerciseData('weekly');
-        //}
-    //}, [sessionId]);
-
     const fetchExerciseData = useCallback(async (timePeriod) => {
         if (!sessionId) {
             console.error("Session ID is not available. Cannot fetch data.");
