@@ -15,15 +15,15 @@ print("Pose model loaded successfully:", pose)
 
 #Loading Models
 # Load model
-with open("D://MediaTrix//AI based Fitness WebApp//mark_1//Models//bicep//KNN_model.pkl", "rb") as f:
+with open("D://MediaTrix//AI based Fitness WebApp//mark_1//backend//Models//bicep//KNN_model.pkl", "rb") as f:
     bicep_model = pickle.load(f)
-with open("D://MediaTrix//AI based Fitness WebApp//mark_1//Models//plank//LR_model.pkl", "rb") as f:
+with open("D://MediaTrix//AI based Fitness WebApp//mark_1//backend//Models//plank//LR_model.pkl", "rb") as f:
     plank_model = pickle.load(f)
-with open("D://MediaTrix//AI based Fitness WebApp//mark_1//Models//pushup//RF_model.pkl", "rb") as f:
+with open("D://MediaTrix//AI based Fitness WebApp//mark_1//backend//Models//pushup//RF_model.pkl", "rb") as f:
     pushup_model = pickle.load(f)
-with open("D://MediaTrix//AI based Fitness WebApp//mark_1//Models//squat//LR_model.pkl", "rb") as f:
+with open("D://MediaTrix//AI based Fitness WebApp//mark_1//backend//Models//squat//LR_model.pkl", "rb") as f:
     count_model = pickle.load(f)
-pose_model = YOLO("D://MediaTrix//AI based Fitness WebApp//mark_1//Models//Excercise_Model.pt")
+pose_model = YOLO("D://MediaTrix//AI based Fitness WebApp//mark_1//backend//Models//Excercise_Model.pt")
 
 def calculate_angle(p1, p2, p3):
     x1, y1 = p1

@@ -24,9 +24,7 @@ const Trainer = ({ onLogout }) => {
     const [weeklyData, setWeeklyData] = useState(null);
     const [isProcessing, setIsProcessing] = useState(false);
     const processVideoTimeoutRef = useRef(null);
-    const [chartError, setChartError] = useState(null);
-    const [isLoading, setIsLoading] = useState(false);
-    //const [isStartingCamera, setIsStartingCamera] = useState(false);
+    //const processingIntervalRef = useRef(null);
 
     const exercises = {
         "Abs": ["Crunches", "Situps", "Plank", "Mountain Climber", "Side Bridges"],
@@ -110,24 +108,18 @@ const Trainer = ({ onLogout }) => {
             } else if (timePeriod === 'weekly') {
                 setWeeklyData(formatChartData(data));
             }
-            setChartError(null); // Clear any previous chart errors
         } catch (error) {
             console.error(`Error fetching ${timePeriod} data:`, error);
-            setChartError(error.message); // Set the error message
-        }finally {
-            setIsLoading(false); // Set loading to false after fetch completes
+            setError(error.message);// Set the error message
         }
     }, [sessionId, token]);
 
     const formatChartData = (data) => {
-        if (data === undefined || data === null || data.length === 0) { // Check for undefined as well
-            return {  // Return a default chart data object
-                labels: [],
-                datasets: [{ label: 'Reps', data: [], borderColor: 'rgb(75, 192, 192)', tension: 0.4 }],
-            };
+        if (!data || data.length === 0) { // Check for undefined as well
+            return null;
         }
 
-        const labels = data.map(item => item.date); // Directly use the date
+        const labels = data.map(item => item.date || item.day); // Directly use the date
         const repCounts = data.map(item => item.rep_count);
 
         return {
@@ -153,18 +145,15 @@ const Trainer = ({ onLogout }) => {
         setIsDropdownOpen(!isDropdownOpen);
     };
 
-    const processVideo = useCallback(async () => { // Wrap processVideo in useCallback
+    const processVideo = useCallback(async () => {
         console.log("processVideo() called!");
-        console.log("isCameraActive:", isCameraActive);
-        console.log("videoRef.current:", videoRef.current);
-        console.log("sessionId:", sessionId);
-        console.log("token:", token);
-        console.log("isProcessing:", isProcessing);
-
-        if (!isCameraActive || !videoRef.current || !sessionId || !token || isProcessing || !stream) return;
+        if (!isCameraActive || !videoRef.current || !sessionId || !token || isProcessing || !stream) {
+            return;
+        }
 
         if (videoRef.current.videoWidth === 0 || videoRef.current.videoHeight === 0) {
-            setTimeout(processVideo, 500);
+            console.log("Video dimensions not available yet. Retrying...");
+            //setTimeout(processVideo, 500);
             return;
         }
 
@@ -173,27 +162,23 @@ const Trainer = ({ onLogout }) => {
         const canvas = document.createElement('canvas');
         canvas.width = videoRef.current.videoWidth;
         canvas.height = videoRef.current.videoHeight;
-        console.log("Canvas width:", canvas.width);
-        console.log("Canvas height:", canvas.height);
         canvas.getContext('2d').drawImage(videoRef.current, 0, 0);
-        console.log("Image drawn on canvas");
 
         const blob = await new Promise(resolve => canvas.toBlob(resolve, 'image/jpeg'));
 
         const formData = new FormData();
         formData.append('file', blob, 'frame.jpg');
         formData.append('session_id', sessionId);
-        console.log("FormData:", formData);
 
         try {
-            const url = `http://localhost:8000/process_frame?session_id=${sessionId}`; // Construct URL with query parameter
-    
-            const response = await fetch(url, { // Use the corrected URL
+            const url = `http://localhost:8000/process_frame?session_id=${sessionId}`;
+
+            const response = await fetch(url, {
                 method: 'POST',
                 headers: {
                     'Authorization': `Bearer ${token}`
                 },
-                body: formData, // FormData remains in the body (for the image file)
+                body: formData,
             });
 
             if (!response.ok) {
@@ -218,15 +203,65 @@ const Trainer = ({ onLogout }) => {
             console.error("Error processing frame:", error);
             setError(error.message);
         } finally {
-            setIsProcessing(false); // Reset processing flag
+            setIsProcessing(false);
         }
-    }, [isCameraActive, sessionId, token, isProcessing, fetchExerciseData, stream]);
+    }, [isCameraActive, sessionId, token, isProcessing, stream, fetchExerciseData]);
 
-    const handleCameraToggle = useCallback(async () => { 
-        setIsCameraActive(prevIsCameraActive => !prevIsCameraActive); 
+    useEffect(() => {
+        let currentVideoRef = videoRef.current;
+
+        const startCameraAndProcess = async () => {
+            if (isCameraActive && selectedExercise && currentVideoRef && !currentVideoRef.srcObject && sessionId && !stream) {
+                try {
+                    const constraints = { video: true };
+                    const newStream = await navigator.mediaDevices.getUserMedia(constraints);
+                    currentVideoRef.srcObject = newStream;
+                    setStream(newStream);
+
+                    processVideoTimeoutRef.current = setTimeout(processVideo, 1000);
+
+                } catch (error) {
+                    console.error("Error starting camera:", error);
+                    setError(error.message);
+                    setIsCameraActive(false);
+                    if (currentVideoRef && currentVideoRef.srcObject) {
+                        currentVideoRef.srcObject.getTracks().forEach(track => track.stop());
+                        currentVideoRef.srcObject = null;
+                    }
+                }
+            } else if (!isCameraActive && stream) {
+                const tracks = stream.getTracks();
+                tracks.forEach(track => track.stop());
+                currentVideoRef.srcObject = null;
+                setStream(null);
+                setIsProcessing(false);
+                clearTimeout(processVideoTimeoutRef.current);
+                //clearInterval(processingIntervalRef.current);
+            } else if (isCameraActive && selectedExercise && currentVideoRef && sessionId && stream && !isProcessing) {
+                processVideoTimeoutRef.current = setTimeout(processVideo, 1000);
+            }
+        };
+
+        startCameraAndProcess();
+
+        return () => {
+            if (stream) {
+                const tracks = stream.getTracks();
+                tracks.forEach(track => track.stop());
+                currentVideoRef.srcObject = null;
+                setStream(null);
+                setIsProcessing(false);
+                clearTimeout(processVideoTimeoutRef.current);
+                //clearInterval(processingIntervalRef.current);
+            }
+        };
+    }, [isCameraActive, selectedExercise, sessionId, processVideo, stream, isProcessing]);
+
+    const handleCameraToggle = useCallback(async () => {
+        setIsCameraActive(prevIsCameraActive => !prevIsCameraActive);
         setError(null);
-    
-        if (!isCameraActive && selectedExercise && !sessionId) { 
+
+        if (!isCameraActive && selectedExercise && !sessionId) {
             try {
                 const startResponse = await fetch('http://localhost:8000/start_session', {
                     method: 'POST',
@@ -236,13 +271,13 @@ const Trainer = ({ onLogout }) => {
                     },
                     body: JSON.stringify({ exercise: selectedExercise }),
                 });
-    
+
                 if (startResponse.status === 401) {
                     const refreshed = await refreshAccessToken();
                     if (refreshed) {
-                        return handleCameraToggle(); // Retry with new token
+                        return handleCameraToggle();
                     } else {
-                        return; // Stop execution
+                        return;
                     }
                 } else if (!startResponse.ok) {
                     const errorText = await startResponse.text();
@@ -266,88 +301,14 @@ const Trainer = ({ onLogout }) => {
             }
         } else if (!isCameraActive && selectedExercise && sessionId) {
             processVideo();
-        } else if (isCameraActive) {
-            // Stop processing but don't stop the session immediately.
-            setIsProcessing(false);
-            clearTimeout(processVideoTimeoutRef.current);
+        } else if (isCameraActive) { // Just stop video processing, don't stop the session.
+            if (videoRef.current && videoRef.current.srcObject) {
+                videoRef.current.srcObject.getTracks().forEach(track => track.stop());
+                videoRef.current.srcObject = null;
+            }
         }
     }, [selectedExercise, sessionId, token, isCameraActive, processVideo, refreshAccessToken]);
 
-useEffect(() => {
-    let currentVideoRef = videoRef.current;
-    let isMounted = true;
-    //let currentTimeoutRef = processVideoTimeoutRef.current;
-
-    const startCameraAndProcess = async () => {
-        if (isCameraActive && selectedExercise && currentVideoRef && !currentVideoRef.srcObject && sessionId && !stream) {
-            //processVideoTimeoutRef.current = setTimeout(processVideo, 1000);
-            try {
-                const constraints = { video: true };
-                const newStream = await navigator.mediaDevices.getUserMedia(constraints);
-
-                if (!isMounted) {
-                    newStream.getTracks().forEach(track => track.stop()); // Stop if component unmounted
-                    return;
-                }
-                currentVideoRef.srcObject = newStream;
-                setStream(newStream);
-
-                currentVideoRef.onloadedmetadata = () => {
-                    currentVideoRef.play();
-                    //processVideo();
-                };
-
-            } catch (error) {
-                console.error("Error starting camera:", error);
-                setError(error.message);
-                setIsCameraActive(false);
-                if (currentVideoRef && currentVideoRef.srcObject) {
-                    currentVideoRef.srcObject.getTracks().forEach(track => track.stop());
-                    currentVideoRef.srcObject = null;
-                }
-            } 
-        } else if (!isCameraActive && stream) {
-            const tracks = stream.getTracks();
-            tracks.forEach(track => track.stop());
-            currentVideoRef.srcObject = null;
-            setStream(null);
-            setIsProcessing(false);
-        } else if (isCameraActive && selectedExercise && currentVideoRef && sessionId && stream && !isProcessing) {
-            processVideoTimeoutRef.current = setTimeout(processVideo, 1000); // Call processVideo after 1 sec only if not already processing
-        }
-    };
-
-    startCameraAndProcess();
-
-    return () => {
-        isMounted = false; // Set flag to false on unmount
-        if (currentVideoRef && stream) {
-            currentVideoRef.srcObject = null;
-            const tracks = stream.getTracks();
-            tracks.forEach(track => track.stop());
-            setStream(null);
-            setIsProcessing(false);
-        }
-    };
-}, [isCameraActive, selectedExercise, sessionId, processVideo, stream, isProcessing]);
-
-useEffect(() => {
-    if (isCameraActive && selectedExercise && videoRef.current && sessionId && stream && !isProcessing) {
-        const processNextFrame = () => {
-            if (isCameraActive && selectedExercise && videoRef.current && sessionId && stream && !isProcessing) {
-                processVideo();
-                processVideoTimeoutRef.current = setTimeout(processNextFrame, 1000);
-            }
-        };
-        processVideoTimeoutRef.current = setTimeout(processNextFrame, 1000); // Initial call
-    } else {
-        clearTimeout(processVideoTimeoutRef.current);
-    }
-
-    return () => {
-        clearTimeout(processVideoTimeoutRef.current);
-    };
-}, [isCameraActive, selectedExercise, sessionId, stream, isProcessing, processVideo]);
 
     const handleExerciseSelect = (exercise) => {
         setSelectedExercise(exercise);
@@ -360,16 +321,11 @@ useEffect(() => {
         setDailyData(null);
         setWeeklyData(null);
         setIsCameraActive(false);
-        if (isCameraActive) { // If camera is already on, start processing immediately
-            processVideo();
-        } 
-        if (stream) { // Stop the current stream
+        if (stream) {
             stream.getTracks().forEach(track => track.stop());
             videoRef.current.srcObject = null;
             setStream(null);
-            setIsProcessing(false); // Important: Reset isProcessing here as well
         }
-        setIsCameraActive(false);
     };
 
     return (
@@ -387,13 +343,11 @@ useEffect(() => {
                     )}
                 </div>
             </div>
-
             <div className="trainer-main-content">
                 <div className="trainer-webcam-area">
                     <video className="webcam-feed" ref={videoRef} autoPlay muted></video>
                     {processedImage && <img src={processedImage} alt="Processed Frame" className="processed-image" />}
                 </div>
-
                 <div className="trainer-controls">
                     <div className="exercise-selection">
                         <h3>Select Exercise</h3>
@@ -412,40 +366,35 @@ useEffect(() => {
                             </div>
                         ))}
                     </div>
-
                     <button onClick={handleCameraToggle} disabled={!selectedExercise}>
                         {isCameraActive ? 'Stop' : 'Start'}
                     </button>
-
                     <div className="exercise-stats">
                         <p>Reps: {reps}</p>
                         <p>Time Taken: {timeTaken} seconds</p>
                     </div>
                 </div>
             </div>
-
             <div className="feedback-area">
                 <div className="feedback-card">
                     <h3>Feedback</h3>
                     {feedback.map((f, index) => <p key={index}>{f}</p>)}
                     {error && <p className="error-message">{error}</p>}
                 </div>
-
                 <div className="chart-area">
-                    {isLoading && <p>Loading chart data...</p>} {/* Display loading message */}
-                    {!isLoading && dailyData && ( // Only render if not loading AND data is available
+                    {dailyData && (
                         <div className="chart-container">
                             <h3>Daily Exercise Analysis</h3>
                             <Line data={dailyData} />
                         </div>
                     )}
-                    {!isLoading && weeklyData && ( // Same for weekly data
+
+                    {weeklyData && (
                         <div className="chart-container">
                             <h3>Weekly Exercise Analysis</h3>
                             <Line data={weeklyData} />
-                         </div>
+                        </div>
                     )}
-                    {chartError && <p className="error-message">{chartError}</p>}
                 </div>
             </div>
         </div>
